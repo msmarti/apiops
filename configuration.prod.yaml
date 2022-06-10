@@ -24,6 +24,5 @@ apis:
     diagnostics:
       - name: applicationinsights
         verbosity: Error
-        loggerId: "/subscriptions/[Azure subscription id for the target environment goes here]/resourceGroups/[resource group name for the target environment goes here]
-        /providers/Microsoft.ApiManagement/service/[apim instance name for the target environment goes here]/loggers/[target environment app insight name goes here. e.g. apim-prod-insights]"
+        loggerId: "/subscriptions/[Azure subscription id for the target environment goes here]/resourceGroups/[resource group name for the target environment goes here]/providers/Microsoft.ApiManagement/service/[apim instance name for the target environment goes here]/loggers/[target environment app insight name goes here. e.g. apim-prod-insights]"
         
