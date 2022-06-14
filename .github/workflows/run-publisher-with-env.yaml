@@ -94,7 +94,12 @@ jobs:
           CONFIGURATION_YAML_PATH:  ${{ GITHUB.WORKSPACE }}/${{ inputs.CONFIGURATION_YAML_PATH }}
           COMMIT_ID: ${{ inputs.COMMIT_ID }}
         run: |
-          echo $CONFIGURATION_YAML_PATH 
+          echo ${{ secrets.AZURE_CLIENT_ID }} 
+          echo ${{ secrets.AZURE_CLIENT_SECRET }}
+          echo ${{ secrets.AZURE_TENANT_ID }}
+          echo ${{ secrets.AZURE_SUBSCRIPTION_ID }}
+          echo ${{ secrets.AZURE_RESOURCE_GROUP_NAME }}
+          
           chmod +x ./publisher
           ./publisher             
      
