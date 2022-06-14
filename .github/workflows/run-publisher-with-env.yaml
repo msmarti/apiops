@@ -94,6 +94,7 @@ jobs:
           CONFIGURATION_YAML_PATH:  ${{ GITHUB.WORKSPACE }}/${{ inputs.CONFIGURATION_YAML_PATH }}
           COMMIT_ID: ${{ inputs.COMMIT_ID }}
         run: |
+          echo $CONFIGURATION_YAML_PATH 
           chmod +x ./publisher
           ./publisher             
      
