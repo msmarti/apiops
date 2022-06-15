@@ -1,5 +1,1 @@
 apimServiceName: apim-prod-am-2022
-namedValues:
-  - name: environment
-    displayName: environment
-    value: prod
